@@ -24,6 +24,32 @@
   flex-direction: column;
 }
 
+.console {
+  position: relative;
+  width: 30vmin;
+  height: 45vmin;
+  border-bottom-right-radius: 25px;
+  box-sizing: border-box;
+  background-color: #ff007b;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.screen {
+  position: absolute;
+  width: 25vmin;
+  height: 20vmin;
+  background: #a6a6a6;
+  border-radius: 10%;
+  top: 13vmin;
+  left: 5vmin;
+  box-shadow: 14vmin 0;
+}
+
+
+
+
 .ghost {
   position: relative;
   border: 0.5vmin solid black;
@@ -33,7 +59,7 @@
   border-top-right-radius: 100px;
   border-bottom: 0;
   box-sizing: border-box;
-  background: #FFDCDF;
+  background: #ff007b;
 }
 
 .legs {
