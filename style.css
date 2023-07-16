@@ -155,15 +155,36 @@
 
 @media (max-width:767px) {
   .console {
-    border-bottom-right-radius: 45px;
+    border-bottom-right-radius: 42px;
   }
 }
 
+@media (max-width:540px) {
+  .screen {
+    width: 24.5vmin;
+}
+}
+
 @media (max-width:480px) {
+  .screen {
+    width: 24.25vmin;
+}
+
   .console {
-    border-bottom-right-radius: 40px;
+    border-bottom-right-radius: 35px;
   }
 }
+
+@media (max-width:375px) {
+  .screen {
+    width: 24vmin;
+}
+
+.console {
+  border-bottom-right-radius: 30px;
+}
+}
+
 
 .console-line-one {
   position: absolute;
