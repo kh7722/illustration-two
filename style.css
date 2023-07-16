@@ -1,3 +1,9 @@
+- add more to gameboy
+- work on another css art
+- start another website
+- get gameboy added to portfolio website
+- 
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +22,7 @@
 .circle {
   width: 70vmin;
   height: 70vmin;
-  background: #e8e0ff;
+  background: #ffd7eb;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -28,23 +34,190 @@
   position: relative;
   width: 30vmin;
   height: 45vmin;
-  border-bottom-right-radius: 25px;
+  border-bottom-right-radius: 50px;
   box-sizing: border-box;
-  background-color: #ff007b;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  background-image: linear-gradient(to bottom right, #ff8ac2, #ff007b);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-right: 7px solid #860041;
 }
 
 .screen {
   position: absolute;
   width: 25vmin;
-  height: 20vmin;
-  background: #a6a6a6;
+  height: 18vmin;
+  background-image: linear-gradient(to bottom right, #d1d1d1, #4f4f4f);
+  border-radius: 5%;
+  top: 2vmin;
+  left: 1.75vmin;
+  border: 3px solid #757575;
+}
+
+.arrow-key-one {
+  position: absolute;
+  width: 2vmin;
+  height: 7vmin;
+  background-color: #4c4c4c;
   border-radius: 10%;
-  top: 13vmin;
-  left: 5vmin;
-  box-shadow: 14vmin 0;
+  top: 25vmin;
+  left: 7vmin;
+  border-bottom: 4px solid #000;
+  border-right: 4px solid #000;
+}
+
+.arrow-key-two {
+  position: absolute;
+  width: 2vmin;
+  height: 7vmin;
+  background-color: #4c4c4c;
+  border-radius: 10%;
+  top: 25vmin;
+  left: 7vmin;
+  transform: rotate(-90deg);
+  border-bottom: 4px solid #000;
+}
+
+.circle-button-one {
+  position: absolute;
+  width: 2vmin;
+  height: 2vmin;
+  background-color: #4c4c4c;
+  border-radius: 50%;
+  top: 25vmin;
+  left: 21vmin;
+  border-bottom: 3px solid #000;
+  border-right: 3px solid #000;
+}
+
+.circle-button-two {
+  position: absolute;
+  width: 2vmin;
+  height: 2vmin;
+  background-color: #4c4c4c;
+  border-radius: 50%;
+  top: 27.5vmin;
+  left: 24vmin;
+  border-bottom: 3px solid #000;
+  border-right: 3px solid #000;
+}
+
+.circle-button-three {
+  position: absolute;
+  width: 2vmin;
+  height: 2vmin;
+  background-color: #4c4c4c;
+  border-radius: 50%;
+  top: 30vmin;
+  left: 21vmin;
+  border-bottom: 3px solid #000;
+  border-right: 3px solid #000;
+}
+
+
+.circle-button-four {
+  position: absolute;
+  width: 2vmin;
+  height: 2vmin;
+  background-color: #4c4c4c;
+  border-radius: 50%;
+  top: 27.5vmin;
+  left: 18vmin;
+  border-bottom: 3px solid #000;
+  border-right: 3px solid #000;
+}
+
+.bottom-button-one {
+  position: absolute;
+  width: 1.5vmin;
+  height: 4vmin;
+  background-color: #4c4c4c;
+  border-radius: 25%;
+  top: 37vmin;
+  left: 9vmin;
+  transform: rotate(45deg);
+  border-top: 3px solid #000;
+  border-left: 3px solid #000;
+}
+
+.bottom-button-two {
+  position: absolute;
+  width: 1.5vmin;
+  height: 4vmin;
+  background-color: #4c4c4c;
+  border-radius: 25%;
+  top: 37vmin;
+  left: 14vmin;
+  transform: rotate(45deg);
+  border-top: 3px solid #000;
+  border-left: 3px solid #000;
+}
+
+@media (max-width:767px) {
+  .console {
+    border-bottom-right-radius: 45px;
+  }
+}
+
+@media (max-width:480px) {
+  .console {
+    border-bottom-right-radius: 40px;
+  }
+}
+
+.console-line-one {
+  position: absolute;
+  width: .5vmin;
+  height: 4.5vmin;
+  background-color: #860041;
+  border-radius: 25%;
+  top: 37vmin;
+  left: 21vmin;
+  transform: rotate(-32deg);
+}
+
+.console-line-two {
+  position: absolute;
+  width: .5vmin;
+  height: 4.5vmin;
+  background-color: #860041;
+  border-radius: 25%;
+  top: 36.5vmin;
+  left: 22vmin;
+  transform: rotate(-32deg);
+}
+
+.console-line-three {
+  position: absolute;
+  width: .5vmin;
+  height: 4.5vmin;
+  background-color: #860041;
+  border-radius: 25%;
+  top: 36vmin;
+  left: 23vmin;
+  transform: rotate(-32deg);
+}
+
+.console-line-four {
+  position: absolute;
+  width: .5vmin;
+  height: 4.5vmin;
+  background-color: #860041;
+  border-radius: 25%;
+  top: 35.5vmin;
+  left: 24vmin;
+  transform: rotate(-32deg);
+}
+
+.console-line-five {
+  position: absolute;
+  width: .5vmin;
+  height: 4.5vmin;
+  background-color: #860041;
+  border-radius: 25%;
+  top: 35vmin;
+  left: 25vmin;
+  transform: rotate(-32deg);
 }
 
 
