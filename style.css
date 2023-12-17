@@ -1,9 +1,3 @@
-- add more to gameboy
-- work on another css art
-- start another website
-- get gameboy added to portfolio website
-- 
-
 * {
   margin: 0;
   padding: 0;
@@ -22,12 +16,13 @@
 .circle {
   width: 70vmin;
   height: 70vmin;
-  background: #ffd7eb;
+  background: #f1d7ff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  box-shadow: 3px 3px 30px 1px #b99bc9;
 }
 
 .console {
