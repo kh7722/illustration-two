@@ -4,9 +4,8 @@
 }
 
 .canva {
-  background: #f7f5ff;
   height: 100vh;
-  width: 100vw;
+  width: 98vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,7 +15,7 @@
 .circle {
   width: 70vmin;
   height: 70vmin;
-  background: #f1d7ff;
+  background: #484848;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -35,7 +34,7 @@
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  border-right: 7px solid #860041;
+  border-right: 7px solid #a0004d;
 }
 
 .screen {
@@ -180,7 +179,6 @@
 }
 }
 
-
 .console-line-one {
   position: absolute;
   width: .5vmin;
@@ -237,125 +235,118 @@
 }
 
 
-
-
-.ghost {
-  position: relative;
-  border: 0.5vmin solid black;
-  width: 30vmin;
-  height: 30vmin;
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
-  border-bottom: 0;
-  box-sizing: border-box;
-  background: #ff007b;
-}
-
-.legs {
+/* Start New Illustration */
+.circle-two {
+  width: 70vmin;
+  height: 70vmin;
+  background: #b1dee9;
+  border-radius: 50%;
   display: flex;
-  width: 30vmin;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 3px 3px 30px 1px #9a9a9a;
 }
 
-.legs div {
-  width: 7.5vmin;
-  height: 6vmin;
-  border: 0.5vmin solid black;
-  border-bottom-left-radius: 100px;
-  border-bottom-right-radius: 100px;
-  border-top: 0;
-  background: #FFDCDF;
-}
-
-.heart {
-  position: relative;
-  width: 5vmin;
-  height: 5vmin;
-  background-color: #FF3737;
-  transform: translate(22vmin, 6vmin) rotate(25deg) scale(0.5);
-}
-
-.heart:before {
+.lid-top {
   position: absolute;
-  bottom: 0px;
-  left: -2.5vmin;
-  width: 5vmin;
-  height: 5vmin;
-  content: '';
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  background-color: #FF3737;
+width: 200px;
+height: 25px;
+top: 15vmin;
+background: #3d3d3d;
+border-top-right-radius: 3px;
+border-top-left-radius: 3px;
+margin-top: 80px;
 }
 
-.heart:after {
+.lid-bottom {
   position: absolute;
-  top: -2.5vmin;
-  right: 0px;
-  width: 5vmin;
-  height: 5vmin;
-  content: '';
-   
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
- 
-  background-color: #FF3737;
+  width: 250px;
+  height: 40px;
+  top: 29vmin;
+  background: #3d3d3d;
+  border-radius: 3px;
 }
 
-.eyes {
+.lid-shadow {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  background: #000;
-  border-radius: 50%;
-  top: 13vmin;
-  left: 5vmin;
-  box-shadow: 14vmin 0;
+	border-bottom: 15px solid #cfcfcf;
+	border-left: 2px solid transparent;
+	border-right: 2px solid transparent;
+	height: 0;
+	width: 225px;
+  top: 35vmin;
+  rotate:calc(180deg);
 }
 
-.eyes:before{
-  content: "";
+.cup-top {
   position: absolute;
-  background: white;
-  width: 2.5vmin;
-  height: 2.5vmin;
-  border-radius: 50%;
-  left: 2vmin;
-  box-shadow: 14vmin 0 white;
+	border-bottom: 40px solid #e3e3e3;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	height: 0;
+	width: 210px;
+  top: 37vmin;
+  rotate:calc(180deg);
 }
 
-.mouth {
+.cup-sleeve {
   position: absolute;
-  width: 4vmin;
-  height: 2vmin;
-  border: 0.7vmin solid black;
-  border-bottom-left-radius: 100px;
-  border-bottom-right-radius: 100px;
-  border-top: 0;
-  top: 16vmin;
-  left: 12vmin;
+	border-bottom: 125px solid #5a0390;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0px;
+	width: 175px;
+  top: 42vmin;
+  rotate:calc(180deg);
 }
 
-.left-hand, .right-hand {
+.cup-sleeve p {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  border: 0.5vmin solid black;
-  border-bottom-left-radius: 100px;
-  border-bottom-right-radius: 100px;
-  border-top: 0;
-}
-
-.left-hand {
-  top: 22vmin;
+  rotate:calc(180deg);
+  font-size: 70px;
+  font-family: Sacramento;
+  text-align: center;
+  color: #fff;
+  font-weight: 900;
+  top: 1vmin;
   left: 6vmin;
-  transform: rotate(-45deg)
 }
 
-.right-hand{
+.cup-bottom {
+  position: absolute;
+	border-bottom: 75px solid #e3e3e3;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	height: 0;
+	width: 140px;
   top: 22vmin;
-  left: 18vmin;
-  transform: rotate(45deg)
+  rotate:calc(180deg);
+  z-index: 99;
+  position: relative;
 }
+
+.shadow {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  top: 90vmin;
+  background: #98c0c9;
+  z-index: 98;
+  position: relative;
+  top: 105px;
+  clip-path: ellipse(50% 10%);
+}
+
+/* End New Illustration */
+
+
+
+
+
+
+
+
+
+
+
