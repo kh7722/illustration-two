@@ -252,7 +252,7 @@
   position: absolute;
 width: 200px;
 height: 25px;
-top: 15vmin;
+top: 16.5vmin;
 background: #3d3d3d;
 border-top-right-radius: 3px;
 border-top-left-radius: 3px;
@@ -263,7 +263,7 @@ margin-top: 80px;
   position: absolute;
   width: 250px;
   height: 40px;
-  top: 29vmin;
+  top: 30.5vmin;
   background: #3d3d3d;
   border-radius: 3px;
 }
@@ -275,7 +275,7 @@ margin-top: 80px;
 	border-right: 2px solid transparent;
 	height: 0;
 	width: 225px;
-  top: 35vmin;
+  top: 36vmin;
   rotate:calc(180deg);
 }
 
@@ -286,7 +286,7 @@ margin-top: 80px;
 	border-right: 7px solid transparent;
 	height: 0;
 	width: 210px;
-  top: 37vmin;
+  top: 38vmin;
   rotate:calc(180deg);
 }
 
@@ -297,7 +297,7 @@ margin-top: 80px;
 	border-right: 25px solid transparent;
 	height: 0px;
 	width: 175px;
-  top: 42vmin;
+  top: 43vmin;
   rotate:calc(180deg);
 }
 
@@ -334,7 +334,7 @@ margin-top: 80px;
   background: #98c0c9;
   z-index: 98;
   position: relative;
-  top: 105px;
+  top: 115px;
   clip-path: ellipse(50% 10%);
 }
 
