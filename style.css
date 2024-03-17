@@ -191,10 +191,39 @@
 }
 
 .suitcase-shadow {
-  height: 8.5vmin;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  height: 9.5vmin;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
+
+.strap-holes {
+  left: 1vmin;
+}
+
+.buckle-latch {
+  left: 1.25vmin;
+}
+}
+
+@media (max-width:425px) {
+  .suitcase-shadow {
+    height: 9vmin;
+  }
+
+  .buckle-one {
+    left: -.75vmin;
+  }
+  
+  .buckle-two {
+    left: -.75vmin;
+  }
+
+}
+
+@media (max-width:375px) {
+  .strap-holes {
+    left: .75vmin;
+  }
 }
 /* End Suitecase */
 
@@ -206,7 +235,7 @@
 }
 
 .canva {
-  height: 100vh;
+  height: 70vh;
   width: 98vw;
   display: flex;
   align-items: center;
