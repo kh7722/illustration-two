@@ -1,365 +1,4 @@
-/* Start New Illustration */
-
-@keyframes colorchanges {
-  from {background-color: rgb(5, 128, 42);}
-  to {background-color: rgb(7, 108, 126);}
-}
-
-
-.center {
-  width: 50px;
-  height: 50px;
-  background: rgb(255, 255, 255);
-  border-radius: 50%;
-  z-index: 99;
-}
-
-
-
-#heart {
-  position: relative;
-  width: 100px;
-  height: 80px;
-  top: 90px;
-  z-index: 95;
-}
-#heart:before,
-#heart:after {
-  position: absolute;
-  content: "";
-  left: 50px;
-  top: 0;
-  width: 50px;
-  height: 80px;
-  background: red;
-  border-radius: 50px 50px 0 0;
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
-}
-#heart:after {
-  left: 0;
-  transform: rotate(45deg);
-  transform-origin: 100% 100%;
-}
-
-
-
-
-#heart-two {
-  position: relative;
-  width: 100px;
-  height: 80px;
-  transform: rotate(-90deg);
-  left: -50px;
-  top: 60px;
-  z-index: 96;
-}
-#heart-two:before,
-#heart-two:after {
-  position: absolute;
-  content: "";
-  left: 50px;
-  top: 0;
-  width: 50px;
-  height: 80px;
-  background: rgb(208, 51, 51);
-  border-radius: 50px 50px 0 0;
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
-}
-#heart-two:after {
-  left: 0;
-  transform: rotate(45deg);
-  transform-origin: 100% 100%;
-}
-
-
-
-#heart-three {
-  position: relative;
-  width: 100px;
-  height: 80px;
-  transform: rotate(90deg);
-  left: 48px;
-  top: -70px;
-  z-index: 97;
-}
-#heart-three:before,
-#heart-three:after {
-  position: absolute;
-  content: "";
-  left: 50px;
-  top: 0;
-  width: 50px;
-  height: 80px;
-  background: rgb(113, 37, 37);
-  border-radius: 50px 50px 0 0;
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
-}
-#heart-three:after {
-  left: 0;
-  transform: rotate(45deg);
-  transform-origin: 100% 100%;
-}
-
-
-
-
-#heart-four {
-  position: relative;
-  width: 100px;
-  height: 80px;
-  transform: rotate(-180deg);
-  top: -100px;
-  z-index: 98;
-}
-#heart-four:before,
-#heart-four:after {
-  position: absolute;
-  content: "";
-  left: 50px;
-  top: 0;
-  width: 50px;
-  height: 80px;
-  background: rgb(88, 48, 48);
-  border-radius: 50px 50px 0 0;
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
-}
-#heart-four:after {
-  left: 0;
-  transform: rotate(45deg);
-  transform-origin: 100% 100%;
-}
-
-
-
-@media (max-width:1400px) {
-  #heart {
-    top:70px !important;
-  }
-
-  #heart-two {
-    left: -50px !important;
-    top: 55px !important;
-  }
-
-  #heart-three {
-    left: 50px !important;
-    top: -55px !important;
-  }
-
-  #heart-four {
-    top: -70px !important;
-  }
-}
-
-@media (max-width:540px) {
-  .center {
-    width: 50px;
-    height: 70px;
-  }
-
-  #heart {
-    top:55px !important;
-  }
-
-  #heart-two {
-    left: -50px !important;
-    top: 50px !important;
-  }
-
-  #heart-three {
-    left: 50px !important;
-    top: -50px !important;
-  }
-
-  #heart-four {
-    top: -55px !important;
-  }
-}
-
-
-@media (max-width:470px) {
-  .center {
-    width: 35px;
-    height: 45px;
-  }
-
-  #heart {
-    top:45px !important;
-  }
-
-  #heart-two {
-    left: -50px !important;
-    top: 45px !important;
-  }
-
-  #heart-three {
-    left: 50px !important;
-    top: -45px !important;
-  }
-
-  #heart-four {
-    top: -45px !important;
-  }
-}
-
-@media (max-width:350px) {
-  #heart {
-    top:15px !important;
-  }
-
-  #heart-two {
-    left: -50px !important;
-    top: 25px !important;
-  }
-
-  #heart-three {
-    left: 50px !important;
-    top: -25px !important;
-  }
-
-  #heart-four {
-    top: -20px !important;
-  }
-}
-
-
-
-
-
-#container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background: #000;
-  width: 45vmin;
-  height: 45vmin;
-}
-
-.flower-demo{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background: #d5a6a6;
-  width: 35vmin;
-  height: 35vmin;
-}
-
-.triangle {
- margin-top: -20px;
-  width: 0;
-  height: 0;
-  border-top: 80px solid #EDC442;
-  border-left: 28px solid transparent;
-  border-right: 28px solid transparent;   
-}
-
-.circle-demo {
-  background: #EDC442;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-}
-
-.petal{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transform-origin: center 120px;
-}
-
-.petal:nth-child(1) {
-  transform: rotate(45deg);
-}
-
-.petal:nth-child(2) {
-  transform: rotate(65deg);
-}
-
-.petal:nth-child(2) {
-  transform: rotate(90deg);
-}
-
-.petal:nth-child(3) {
-  transform: rotate(135deg);
-}
-
-.petal:nth-child(5) {
-  transform: rotate(180deg);
-}
-
-.petal:nth-child(6) {
-  transform: rotate(225deg);
-}
-
-.petal:nth-child(7) {
-  transform: rotate(270deg);
-}
-
-.petal:nth-child(8) {
-  transform: rotate(315deg);
-}
-
-
-.petal:nth-child(9) {
-  transform: rotate(360deg);
-}
-
-
-
-
-
-
-
-
-
-
-
-.flower {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.small-circle {
-  width: 20vmin;
-  height: 20vmin;
-  background: rgb(255, 255, 255);
-  border-radius: 50%;
-}
-
-.petal-one {
-  width: 20vmin;
-  height: 10vmin;
-  background: rgb(255, 255, 255);
-  border-radius: 100px / 50px;
-  transform: rotate(-90deg);
-}
-
-.petal-two {
-  width: 20vmin;
-  height: 10vmin;
-  background: rgb(255, 255, 255);
-  border-radius: 100px / 50px;
-  transform: rotate(-90deg);
-  top: 65vmin;
-}
-/* End New Illustration */
-
-
-
-
-
-
-
+/* Start Suitecase */
 
 .background {
   width: 70vmin;
@@ -372,7 +11,6 @@
   flex-direction: column;
   box-shadow: 3px 3px 30px 1px #9a9a9a;
 }
-
 
 .suitcase {
   position: relative;
@@ -404,7 +42,6 @@
   top: .5vmin;
   left: .5vmin;
 }
-
 
 .handle {
   position: relative;
@@ -482,14 +119,87 @@
 }
 
 
-@media (max-width:480px) {
-  .layer-two {
-    left: 13vmin;
-  }
+@media (max-width:1680px) {
+  .suitcase-shadow {
+    width: 100%;
+}
+}
+
+@media (max-width:767px) {
+  .suitcase-shadow {
+    height: 7.5vmin;
+}
+}
+
+@media (max-width:650px) {
+  .strap-one {
+    top: -16.5vmin;
+    left: 9vmin;
+}
+
+.strap-two {
+  top: -16.5vmin;
+}
+}
+
+@media (max-width:550px) {
+  .suitcase {
+    border: 10px solid #812c02;
+    border-radius: 12px;
+}
+
+  .suitcase-shadow {
+    height: 7.75vmin;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.strap-one {
+  top: -15.75vmin;
+  left: 10vmin;
+}
+
+.strap-two {
+  top: -15.75vmin;
+  left: 28.5vmin;
+}
 }
 
 
+@media (max-width:480px) {
+  .suitcase {
+    border: 5px solid #812c02;
+    border-radius: 10px;
+}
 
+  .strap-one {
+    top: -15.25vmin;
+    left: 9vmin;
+}
+
+.strap-two {
+  top: -15.25vmin;
+  left: 30vmin;
+}
+
+.buckle-one {
+  left: -.5vmin;
+}
+
+.buckle-two {
+  left: -.5vmin;
+}
+
+.suitcase-shadow {
+  height: 8.5vmin;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+}
+/* End Suitecase */
+
+
+/* Start Gameboy */
 * {
   margin: 0;
   padding: 0;
@@ -726,132 +436,7 @@
   transform: rotate(-32deg);
 }
 
-
-/* Start New Illustration */
-
-.lid-top {
-  position: absolute;
-width: 200px;
-height: 40px;
-top: 16.5vmin;
-background: #3d3d3d;
-border-top-right-radius: 3px;
-border-top-left-radius: 3px;
-margin-top: 80px;
-}
-
-.lid-bottom {
-  position: absolute;
-  width: 250px;
-  height: 40px;
-  top: 30.5vmin;
-  background: #3d3d3d;
-  border-radius: 3px;
-  z-index: 93;
-}
-
-.lid-shadow {
-  position: absolute;
-	border-bottom: 15px solid #cfcfcf;
-	border-left: 2px solid transparent;
-	border-right: 2px solid transparent;
-	height: 0;
-	width: 225px;
-  top: 36vmin;
-  rotate:calc(180deg);
-  z-index: 92;
-}
-
-.cup-top {
-  position: absolute;
-	border-bottom: 50px solid #e3e3e3;
-	border-left: 7px solid transparent;
-	border-right: 7px solid transparent;
-	height: 0;
-	width: 210px;
-  top: 38vmin;
-  rotate:calc(180deg);
-}
-
-.cup-sleeve {
-  position: absolute;
-	border-bottom: 125px solid #5a0390;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	height: 0px;
-	width: 175px;
-  top: 44vmin;
-  rotate:calc(180deg);
-  z-index: 99;
-}
-
-.cup-sleeve p {
-  position: absolute;
-  rotate:calc(180deg);
-  font-size: 70px;
-  font-family: Sacramento;
-  text-align: center;
-  color: #fff;
-  font-weight: 900;
-  top: 1vmin;
-  left: 6vmin;
-}
-
-.cup-bottom {
-  position: absolute;
-	border-bottom: 175px solid #e3e3e3;
-	border-left: 30px solid transparent;
-	border-right: 30px solid transparent;
-	height: 0px;
-	width: 130px;
-  top: 21vmin;
-  rotate:calc(180deg);
-  z-index: 98;
-  position: relative;
-}
-
-.shadow {
-  position: absolute;
-  width: 200px;
-  height: 100px;
-  top: 90vmin;
-  background: #98c0c9;
-  z-index: 97;
-  position: relative;
-  top: 110px;
-  clip-path: ellipse(50% 10%);
-}
-
-
-@media (max-width:1751px) {
-  .shadow {
-    top: 105px;
-  }
-}
-
-@media (max-width:1701px) {
-  .shadow {
-    top: 100px;
-  }
-
-  .cup-sleeve p {
-    left: 7vmin;
-  }
-}
-
-@media (max-width:1626px) {
-  .lid-top {
-  height: 80px;
-  margin-top: 70px;
-  }
-}
-
-/* End New Illustration */
-
-
-
-
-
+/* End Gameboy */
 
 
 
